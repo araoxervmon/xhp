@@ -154,6 +154,7 @@ NEWLINE ("\r\n"|"\n"|"\r")
   "float"    tok(T_XHP_FLOAT);
   "callable" tok(T_XHP_CALLABLE);
   "var"      tok(T_VAR);
+  "mixed"    tok(T_XHP_MIXED);
   "array"    tok(T_XHP_ARRAY);
   "string"   tok(T_XHP_STRING);
   "enum"     tok(T_XHP_ENUM);
@@ -337,6 +338,7 @@ NEWLINE ("\r\n"|"\n"|"\r")
   trait tok(T_TRAIT);
   insteadof tok(T_INSTEADOF);
   yield tok(T_YIELD);
+  "..." tok(T_VARIADIC_PARAMETER);
   __namespace__ tok(T_NS_C);
   __dir__ tok(T_DIR);
   attribute {
